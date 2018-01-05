@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Login :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Password :"
+            app:layout_constraintStart_toStartOf="@+id/tvLogin"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+        <TextView
+            android:id="@+id/tvResultat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Reponse :"
+            app:layout_constraintStart_toStartOf="@+id/tvPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <TextView
+            android:id="@+id/login_reponse_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/password_reponse_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/login_reponse_activity"
+            app:layout_constraintTop_toBottomOf="@+id/login_reponse_activity" />
+
+        <TextView
+            android:id="@+id/result_requete_reponse_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/password_reponse_activity"
+            app:layout_constraintTop_toBottomOf="@+id/password_reponse_activity" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+

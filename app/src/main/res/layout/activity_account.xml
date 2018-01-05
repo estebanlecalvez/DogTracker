@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvNameDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Name : "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Number : "
+            app:layout_constraintStart_toStartOf="@+id/tvNameDog"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameDog" />
+
+        <TextView
+            android:id="@+id/tvDogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Dogs : "
+            app:layout_constraintStart_toStartOf="@+id/tvNumber"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumber" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33152175" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/userName"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+
+        <Spinner
+            android:id="@+id/userDogsSpinner"
+            android:layout_width="225dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/userNumber" />
+
+        <Button
+            android:id="@+id/btnSelectDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:text="Selectionner le chien"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userDogsSpinner" />
+
+        <Button
+            android:id="@+id/btnAddDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Ajouter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSelectDog" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

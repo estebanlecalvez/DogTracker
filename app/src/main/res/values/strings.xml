@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DogTracker</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Login</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Se connecter</string>
+    <string name="action_sign_in_short">Se Connecter</string>
+    <string name="error_invalid_email">Mail invalide.</string>
+    <string name="error_invalid_password">Le mot de passe est trop court</string>
+    <string name="error_incorrect_password">Mot de passe incorrect</string>
+    <string name="error_field_required">Ce champ est requis</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+
+    <!-- Strings related to account -->
+    <string name="your_account">Your Account BRO!</string>
+    <string name="your_dog">Your Dog</string>
+    <string-array name="dogs_array">
+        <item>Michel</item>
+        <item>Bertrand</item>
+        <item>Toto</item>
+    </string-array>
+
+    <!-- Strings related to the mp -->
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_reponse">Create Account</string>
+    <string name="action_submit">Submit</string>
+    <string name="hint_body">etBody</string>
+    <string name="hint_title">etTitle</string>
+    <string name="title_enter_post">tvEnterPost</string>
+
+
+</resources>
